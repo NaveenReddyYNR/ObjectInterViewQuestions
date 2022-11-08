@@ -7,3 +7,55 @@ let name = {
 console.log('Result:', Object.entries(name));
 console.log('Result:', Object.keys(name));
 console.log('Result:', Object.values(name));
+
+
+
+const NonRepeatedChar = (str) => {
+    for (let i = 0; i < str.length; i++) {
+        let j = str.charAt(i);
+        if (str.indexOf(j) == str.lastIndexOf(j)) {
+            return j;
+        }
+    }
+    return null;
+}
+
+console.log(NonRepeatedChar('gova'));
+
+
+let str = "hello i am playing cricket";
+let splitWord = str.split(' ');
+let revSen = '';
+for (i = splitWord.length - 1; i >= 0; i--) {
+    revSen += ' ' + splitWord[i];
+}
+let result = revSen.replace('hello', 'hey');
+console.log(result);
+
+
+
+
+let str = "hello i am playing cricket";
+let Len = str.length;
+
+let splitWord = str.split(' ');
+let rev = '';
+for (let i = Len - 1; i >= 0; i--) {
+    rev += str[i];
+}
+
+console.log(rev);
+
+
+
+
+
+
+
+
+let str = "hello i am playing cricket";
+
+let splitWord = str.replaceAll(' ','').length;
+
+console.log(splitWord);
+console.log(Result);
