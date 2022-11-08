@@ -1,0 +1,9 @@
+let name = {
+    name: 'naveen',
+    age: 27,
+    place: 'bangalore',
+}
+
+console.log('Result:', Object.entries(name));
+console.log('Result:', Object.keys(name));
+console.log('Result:', Object.values(name));
